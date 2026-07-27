@@ -2,22 +2,22 @@ module "account_request_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "noc+sandboxacc2@writerinformation.com"
-    AccountName               = "Sandbox-Acc2"
+    AccountEmail              = "noc+sandboxacc3@writerinformation.com"
+    AccountName               = "Sandbox-Acc3"
     ManagedOrganizationalUnit = "Sandbox" 
-    SSOUserEmail              = "noc+sandboxacc2@writerinformation.com"
+    SSOUserEmail              = "noc+sandboxacc3@writerinformation.com"
     SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "Acc2"
+    SSOUserLastName           = "Acc3"
   }
 
   account_tags = {
-    "ABC:Owner"       = "noc+sandboxacc2@writerinformation.com"
+    "ABC:Owner"       = "noc+sandboxacc3@writerinformation.com"
     "ABC:Division"    = "CDS"
     "ABC:Environment" = "Testing"
     "ABC:CostCenter"  = "400059"
     "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "103"
-    "ABC:BUCode"      = "AFT003"
+    "ABC:DivCode"     = "104"
+    "ABC:BUCode"      = "AFT004"
     "ABC:Project"     = "123456"
   }
 
