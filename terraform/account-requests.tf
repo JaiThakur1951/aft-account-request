@@ -2,28 +2,28 @@ module "account_request_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "noc+infraacc2@writerinformation.com"
-    AccountName               = "Infrastructure-Acc2"
+    AccountEmail              = "noc+infraacc3@writerinformation.com"
+    AccountName               = "Infrastructure-Acc3"
     ManagedOrganizationalUnit = "Infrastructure-OU" 
-    SSOUserEmail              = "noc+infraacc2@writerinformation.com"
+    SSOUserEmail              = "noc+infraacc3@writerinformation.com"
     SSOUserFirstName          = "Infrastructure"
     SSOUserLastName           = "Acc2"
   }
 
   account_tags = {
-    "ABC:Owner"       = "noc+infraacc2@writerinformation.com"
+    "ABC:Owner"       = "noc+infraacc3@writerinformation.com"
     "ABC:Division"    = "CDS"
     "ABC:Environment" = "Testing"
-    "ABC:CostCenter"  = "400057"
+    "ABC:CostCenter"  = "400060"
     "ABC:Vended"      = "true"
     "ABC:DivCode"     = "105"
-    "ABC:BUCode"      = "AFT005"
-    "ABC:Project"     = "456789"
+    "ABC:BUCode"      = "AFT006"
+    "ABC:Project"     = "459789"
   }
 
   change_management_parameters = {
-    change_requested_by = "AWS Control Tower Lab Infrastructure Account 2"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform (AFT) - Infrastructure 2"
+    change_requested_by = "AWS Control Tower Lab Infrastructure Account 3"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform (AFT) - Infrastructure 3"
   }
 
   custom_fields = {
